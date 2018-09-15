@@ -1,0 +1,18 @@
+import cargas.*
+import transportes.*
+import deposito.*
+
+test "Carga maxima del camion - 1" {
+
+	camion.cargaMaxima(1000)
+	ladrillos.cantidadLadrillos(100)
+	
+	deposito.recibir(bumlbebee)
+	deposito.recibir(ladrillos)
+	
+	
+	deposito.llenarVehiculo(camion)
+	
+	assert.equals(camion.cargaDisponible(),0)
+
+}

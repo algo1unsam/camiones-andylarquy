@@ -9,15 +9,7 @@ object camion{
 	
 	method cargar(cosa){
 		
-		if(self.cargaPodria(cosa)){
-		
-		carga.add(cosa)			//Este chequeo es redundante si se ejecuta deposito.llenarVehiculo()
-								//Pero por las dudas lo agrego
-		}else{
-			
-			error.throwWithMessage("Se esta intentando cargar mas de lo posible")
-			
-		}
+			carga.add(cosa)			
 	}
 	
 	method descargar(cosa){
@@ -34,8 +26,7 @@ object camion{
 	
 	method cargaActual(){
 		
-		return carga.sum()
-		
+		return carga.sum{cosa => cosa.peso()}		
 	}
 	
 	method cargaDisponible(){

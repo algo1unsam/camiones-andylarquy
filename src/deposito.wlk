@@ -11,17 +11,21 @@ object deposito{
 		
 	}
 	
-	method llenarVehiculo(transporte){
+	
+	
+	method llenarVehiculo(vehiculo){
 		
 		deposito.forEach{
 			cosa => 
 		
-		if (transporte.cargaPodria(cosa)){	
-			transporte.cargar(cosa)
+			if(vehiculo.cargaPodria(cosa)){
+				
+				vehiculo.cargar(cosa)
 		
-			deposito.remove(cosa)
+				deposito.remove(cosa)
 			
-		}
+			}
+			
 		
 		
 		}

@@ -1,17 +1,17 @@
 object knightRider {
 	
-	const peso = 500
+	const pesoBase = 500
 	const peligro = 10
 	
 	method peligro() = peligro
 	
-	method peso() = peso
+	method peso() = pesoBase
 	
 }
 
 object bumlbebee{
 	
-	const 	peso = 800
+	const 	pesoBase = 800
 	var property transformacion = "auto"
 	
 	
@@ -31,13 +31,13 @@ object bumlbebee{
 	
 	
 	
-	method peso() = peso
+	method peso() = pesoBase
 			
 }
 
 object ladrillos{
 	
-	var property pesoCadaUno = 2
+	const pesoCadaUno = 2
 	var property cantidadLadrillos = 10
 	var property peligro = 2
 	
