@@ -92,7 +92,7 @@ object motoneta{
 	
 	method cargaActual(){
 		
-		return carga.sum()
+		return carga.sum{cosa => cosa.peso()}
 		
 	}
 	
