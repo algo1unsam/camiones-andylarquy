@@ -2,6 +2,7 @@ import cargas.*
 import transportes.*
 import deposito.*
 
+// TODO faltan tests
 test "Carga maxima del camion - 1" {
 
 	camion.cargaMaxima(1000)

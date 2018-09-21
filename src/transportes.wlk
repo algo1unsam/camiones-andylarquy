@@ -70,6 +70,8 @@ object motoneta{
 		
 		carga.add(cosa)			//Este chequeo es redundante si se ejecuta deposito.llenarVehiculo()
 								//Pero por las dudas lo agrego
+								// TODO si, creo que tranquilamente podria estar solo aca
+								// para que la lógica de cargar este siempre en el mismo lugar 
 		}else{
 			
 			error.throwWithMessage("Se esta intentando cargar mas de lo posible y/o con un peligro mayor de lo admitido")
